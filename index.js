@@ -1,7 +1,11 @@
 var rule = require('./lib/rule');
+var migration = require('./lib/migration');
 var converter = require('./lib/converter');
 
-module.exports = {
-  Rule: rule.Rule,
-  Converter: converter.Converter
+module.exports = function crossgrade() {
+  return converter.apply(this, arguments);
 };
+
+crossgrade.Rule = rule.Rule;
+crossgrade.Migration = migration.Migration;
+crossgrade.Converter = converter.Converter;
