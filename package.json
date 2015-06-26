@@ -16,6 +16,13 @@
     "url": "http://github.com/jpommerening/crossgrade/issues"
   },
   "scripts": {
-    "install": "false # wait for it"
+    "test": "mocha test/*.js"
+  },
+  "dependencies": {
+    "semver": "~4.3.6"
+  },
+  "devDependencies": {
+    "mocha": "~2.2.5",
+    "expect.js": "~0.3.1"
   }
 }
