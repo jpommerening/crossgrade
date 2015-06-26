@@ -1,0 +1,21 @@
+{
+  "name": "crossgrade",
+  "version": "0.0.0",
+  "description": "An abstract migration framework for use in versioned APIs and databases",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jpommerening/crossgrade.git"
+  },
+  "author": {
+    "name": "Jonas Pommerening",
+    "email": "jonas.pommerening@gmail.com",
+    "url": "https://npmjs.org/~jpommerening"
+  },
+  "bugs": {
+    "url": "http://github.com/jpommerening/crossgrade/issues"
+  },
+  "scripts": {
+    "install": "false # wait for it"
+  }
+}
