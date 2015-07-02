@@ -30,6 +30,21 @@ describe('Converter', function () {
       });
     });
 
+
+    it('...', function () {
+      var c = converter( data );
+      var o = {};
+      c.from('0.1.0').to('0.4.0').call(o, 1, 2);
+
+      expect(o).to.eql({
+        calls: [
+          [ new semver.SemVer('0.1.0'), new semver.SemVer('0.2.0'), 1, 2 ],
+          [ new semver.SemVer('0.2.0'), new semver.SemVer('0.3.4'), 1, 2 ],
+          [ new semver.SemVer('0.3.4'), new semver.SemVer('0.4.0'), 1, 2 ]
+        ]
+      });
+    });
+
   });
 
 });
